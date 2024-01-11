@@ -15,14 +15,26 @@ class Student(val name: String,
 
         if(num1>num2){
             Log.d("연습용", this.name)
+            return false
         }
         else{
             Log.d("연습용", this.name)
             Log.d("연습용", "잘 부탁드립니다.")
+            return true
         }
-        return true
 
 
+
+    }
+
+    //2024년의 나의 나이를 결과로 내보내주는 함수.
+
+    fun getMyAgeIn2024():Int{
+       val myAge = 2024-this.birthYear+1
+       return myAge
+    }
+    fun printName():Unit{
+        Log.d("연습용", this.name)
     }
 
 }
